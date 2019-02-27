@@ -5,17 +5,16 @@ import java.util.Scanner;
 public class PalindromeString {
 
 	public static void main(String[] args) {
-		String reverse="";
-		Scanner sc=new Scanner(System.in);
+		String reverse = "";
+		Scanner sc = new Scanner(System.in);
 		System.out.println("enter the string");
-		String str=sc.nextLine();
-		for(int i=str.length()-1;i>=0;i--) {
-			reverse=reverse+str.charAt(i);
+		String str = sc.nextLine();
+		for (int i = str.length() - 1; i >= 0; i--) {
+			reverse = reverse + str.charAt(i);
 		}
-		if(reverse.equals(str)) {
+		if (reverse.equals(str)) {
 			System.out.println("palindrome");
-		}
-		else {
+		} else {
 			System.out.println("not palindrome");
 		}
 		sc.close();
